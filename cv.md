@@ -2,7 +2,7 @@
 
 aspiring front-end developer
 
-### Profile
+### About me
 
 I am new to programming and willing to begin my career in web development. Fast learner, hard worker and team player. I am open to all opportunities and eager to gain knowledge and experience. 
 
@@ -14,12 +14,19 @@ I am new to programming and willing to begin my career in web development. Fast 
 
 ### Skills
 
-* English B2
 * JavaScript
 * HTML
 * CSS
 * Git
 * Python
+
+### Languages
+
+**English B2**
+
+* I have weekly three-hour language practice with a native speaker
+* I was a volunteer in an international eco-camp that took place in Italy, which allowed me to immerse myself in the language environment for two weeks.
+* I am currently working with foreing students who come to study in my university.
 
 # Code examples
 
@@ -28,7 +35,6 @@ function domainName(url){
    return url.match(/(?:https?\:\/\/)?(?:www.)?([\w-]+)(?:(\.|\/))/)[1]
 }
 ```
-Yes, I know regular expressions...
 
 ### Contact
 
