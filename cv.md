@@ -4,7 +4,7 @@ aspiring front-end developer
 
 ### Profile
 
-I am new to programming and willing to begin my career in web-development. I am a fast learner, and my curiosity pushes me forward, that's why I hope to achieve this goal by the end of next spring. I have worked in a team a lot during my university years, so coommunication and collaboration mean a lot for me. But I don't mind working individually as well. 
+I am new to programming and willing to begin my career in web development. Fast learner, hard worker and team player. I am open to all opportunities and eager to gain knowledge and experience. 
 
 ### Education
 
