@@ -36,6 +36,8 @@ function domainName(url){
 }
 ```
 
+Yes, I know regular expressions...
+
 ### Contact
 
 maria.marchenka@gmail.com
