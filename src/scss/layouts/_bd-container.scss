@@ -1,0 +1,10 @@
+.bd-container {
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin: 0 1.5em;
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5em;
+}
