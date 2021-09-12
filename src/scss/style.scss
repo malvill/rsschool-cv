@@ -3,17 +3,20 @@
 // Abstract
 @import "abstract/constants";
 @import "abstract/mixins";
-@import "abstract/placeholders";
 
 // Base
 @import "base/base";
 
 // Components
+@import "components/about-me";
 @import "components/navigation";
 @import "components/home";
 @import "components/profile";
+@import "components/add-education";
+@import "components/skills";
+@import "components/interests";
 
 // Layouts
 @import "layouts/bd-container";
 @import "layouts/header";
-
+@import "layouts/footer";

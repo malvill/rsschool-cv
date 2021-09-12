@@ -1,14 +1,40 @@
 html {
     scroll-behavior: smooth;
     font-size: 10px;
+    @media screen and (min-width: 968px) {
+        font-size: 15px;
+    }
 }
 
 body {
+    min-width: 200px;
     margin-bottom: $header-height;
     font-family: 'Poppins', Verdana, sans-serif;
     @include font($size: $font-size-normal, $color: $color-text);
     background-color: $color-body;
+    @media screen and (min-width: 968px) {
+        margin: 3rem 0;
+    }
 }
+
+@media screen and (min-width: 968px) {
+    .resume {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: $color-container;
+        box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+        clip-path: inset(-8px -8px -8px 0px);
+    }
+    
+    .resume__left {
+        background-color: $color-container-alt;
+    }
+
+    .resume__left, .resume__right {
+        padding: 0 2rem;
+    }
+}
+
 
 h1 {
     @include font($size: $font-size-h1, $weight: $font-semi-bold, $color: $color-title);
@@ -19,6 +45,9 @@ h2 {
     letter-spacing: .35rem;
     text-align: center;
     margin-bottom: 1.5rem;
+    @media screen and (min-width: 968px) {
+        text-align: left;
+    }
 }
 
 h3 {

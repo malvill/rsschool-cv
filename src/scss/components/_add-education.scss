@@ -1,0 +1,38 @@
+.add-education__content {
+    display: flex;
+}
+
+.add-education__elements {
+    padding-right: 1em;
+}
+
+.add-education__rounder {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: $color-text-light;
+    border-radius: 50%;
+    margin-top: .25rem;
+}
+
+.add-education__line {
+    display: block;
+    width: 2px;
+    height: 110%;
+    background-color: $color-text-light;
+    transform: translate(7px, 0);
+}
+
+.add-education__data {
+    gap: .5rem;
+}
+
+.add-education__subtitle {
+    font-size: $font-size-small;
+    color: $color-title;
+}
+
+.add-education__year {
+    font-size: $font-size-smaller;
+}

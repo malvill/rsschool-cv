@@ -1,0 +1,26 @@
+.footer {
+    max-height: 70px;
+    background-color: $color-text-light;
+    box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+    clip-path: inset(0px -8px -8px 0px);
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: right;
+    align-items: center;
+}
+
+.footer__links {
+    margin-left: auto;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.footer__icon {
+    font-size: 2rem;
+    color: #FCFCFC;
+}
+
+.footer__logo {
+    flex-basis: 60%;
+}

@@ -1,9 +1,13 @@
 .home {
     position: relative;
+    padding-top: 3rem;
 }
 
 .home__container {
     gap: 3rem;
+    @media screen and (min-width: 968px) {
+        gap: 1.5rem;
+    }
 }
 
 .home__data {
@@ -53,6 +57,9 @@
     margin-top: 1.5rem;
     &:hover {
         background-color: $color-text;
+    }
+    @media screen and (min-width: 968px) {
+        display: none;
     }
 }
 

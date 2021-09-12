@@ -5,8 +5,8 @@
     align-items: center;
 }
 
-@media screen and (max-width: 968px) {
-    .nav__menu {
+.nav__menu {
+    @media screen and (max-width: 968px) {
         position: fixed;
         bottom: -100%;
         left: 0;
@@ -39,6 +39,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    @media screen and (max-width: 320px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem .5rem;
+    }
 }
 
 .nav__link {

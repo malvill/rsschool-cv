@@ -1,7 +1,11 @@
 .bd-container {
-    max-width: 968px;
+    max-width: 1050px;
     width: calc(100% - 3rem);
     margin: 0 1.5em;
+    @media screen and (min-width: 968px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .bd-grid {
