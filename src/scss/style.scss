@@ -7,6 +7,11 @@
 // Base
 @import "base/base";
 
+// Layouts
+@import "layouts/bd-container";
+@import "layouts/header";
+@import "layouts/footer";
+
 // Components
 @import "components/about-me";
 @import "components/navigation";
@@ -15,8 +20,6 @@
 @import "components/add-education";
 @import "components/skills";
 @import "components/interests";
+@import "components/code";
 
-// Layouts
-@import "layouts/bd-container";
-@import "layouts/header";
-@import "layouts/footer";
+

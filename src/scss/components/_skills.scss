@@ -1,3 +1,15 @@
+.skills__content {
+    margin: 0 auto;
+    width: 70%;
+    @media screen and (min-width: 500px) {
+        width: 55%;
+    }
+    @media screen and (min-width: 767px) {
+        margin: unset;
+        width: auto;
+    } 
+}
+
 .skills__item {
     display: flex;
     align-items: center;
@@ -9,17 +21,20 @@
     display: inline-block;
     width: 5px;
     height: 5px;
-    background-color: $color-text;
+    background-color: transparent;
     border-radius: 50%;
     margin-right: .75rem;
+    @media screen and (min-width: 767px) {
+        background-color: $color-text;
+    } 
 }
 
 .progress-bar {
     width: 60%;
     height: .5rem;
     position: relative;
-    background-color: $color-text-light;
-    @media screen and (min-width: 968px) {
+    background-color: $color-container-alt; 
+    @media screen and (min-width: 767px) {
         background-color: #FCFCFC;
     }
 }
@@ -28,8 +43,8 @@
     position: absolute;
     left: 0;
     height: 100%;
-    background-color: $color-container;
-    @media screen and (min-width: 968px) {
+    background-color: $color-text-light;;
+    @media screen and (min-width: 767px) {
         background-color: $color-text-light;
     }
 }

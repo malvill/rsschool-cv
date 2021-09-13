@@ -1,6 +1,12 @@
 html {
     scroll-behavior: smooth;
     font-size: 10px;
+    @media screen and (min-width: 450px) {
+        font-size: 13px;
+    }
+    @media screen and (min-width: 700px) {
+        font-size: 12px;
+    }
     @media screen and (min-width: 968px) {
         font-size: 15px;
     }
@@ -12,12 +18,12 @@ body {
     font-family: 'Poppins', Verdana, sans-serif;
     @include font($size: $font-size-normal, $color: $color-text);
     background-color: $color-body;
-    @media screen and (min-width: 968px) {
+    @media screen and (min-width: 767px) {
         margin: 3rem 0;
     }
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 767px) {
     .resume {
         display: grid;
         grid-template-columns: .5fr 1fr;

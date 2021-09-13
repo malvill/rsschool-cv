@@ -1,0 +1,6 @@
+.code__link {
+    color: $color-text; 
+    &:hover {
+        color: $color-title;
+    }
+}

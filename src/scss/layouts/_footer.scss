@@ -13,6 +13,7 @@
     margin-left: auto;
     display: flex;
     width: 20%;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -23,4 +24,8 @@
 
 .footer__logo {
     flex-basis: 60%;
+}
+
+.footer__year {
+    color: $color-container;
 }
