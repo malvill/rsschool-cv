@@ -28,7 +28,7 @@ I am new to programming and willing to begin my career in web development. Fast 
 * I was a volunteer in an international eco-camp that took place in Italy, which allowed me to immerse myself in the language environment for two weeks.
 * I am currently working with foreing students who come to study in my university.
 
-# Code examples
+### Code examples
 
 ```javascript
 function domainName(url){

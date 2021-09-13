@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Resume</title>
+  </head>
+  <body>
+      <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a class="nav__logo" href="">Maria</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#home">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#profile">
+                            <i class='bx bx-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#education">
+                            <i class='bx bx-book nav__icon'></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#skills">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#add-education">
+                            <i class='bx bx-receipt nav__icon'></i>Additional education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#languages">
+                            <i class='bx bx-receipt nav__icon'></i>Languages
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#code-example">
+                            <i class='bx bx-receipt nav__icon'></i>Code example
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#languages">
+                            <i class='bx bx-receipt nav__icon'></i>Languages
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bxs-grid-alt' ></i>
+            </div>
+        </nav>
+      </header>
+
+      <main class="main bd-container">
+          <div class="resume">
+            <div class="resume__left">
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img class="home__img" src="src/img/me.jpg" alt="photo-of-me">
+                            <h1 class="home__title">Maria <b>Marchenko</b></h1>
+                            <h3 class="home__subtitle">Aspiring frontend developer</h3>
+                            <div>
+                                <a class="home__button-download" download="" href="src/pdf/Maria_Marchenko.pdf">Download</a> 
+                            </div>
+                        </div>
+
+                        <div class="home__contacts">
+                            <ul class="contacts bd-grid">
+                                <li class="contacts__item">
+                                    <i class='bx bx-map contacts__icon'></i> Saint-Petersburg, 19628
+                                </li>
+                                <li class="contacts__item">
+                                    <i class='bx bx-envelope contacts__icon'></i> maria.marrrch@gmail.com
+                                </li>
+                                <li class="contacts__item">
+                                    <i class='bx bx-phone contacts__icon'></i> 123-456-789
+                                </li>
+                            </ul>
+                        </div>
+                     
+                    </div>
+                </section>                
+
+                <section class="skills section">
+                    <h2>Skills</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__list">
+                            <li class="skills__item">
+                                <div class="skills-item__name">
+                                    <span class="skills-item__circle"></span>
+                                    <span class="skills-item__text">JavaScript</span>
+                                </div>
+                                <div class="skills-item__bar progress-bar">
+                                    <div class="progress progress-js"></div>
+                                </div>
+                            </li>
+                            <li class="skills__item">
+                                <div class="skills-item__name">
+                                    <span class="skills-item__circle"></span>
+                                    <span class="skills-item__text">HTML</span>
+                                </div>
+                                <div class="skills-item__bar progress-bar">
+                                    <div class="progress progress-html"></div>
+                                </div>
+                            </li>
+                            <li class="skills__item">
+                                <div class="skills-item__name">
+                                    <span class="skills-item__circle"></span>
+                                    <span class="skills-item__text">CSS</span>
+                                </div>
+                                <div class="skills-item__bar progress-bar">
+                                    <div class="progress progress-css"></div>
+                                </div>
+                            </li>
+                            <li class="skills__item">
+                                <div class="skills-item__name">
+                                    <span class="skills-item__circle"></span>
+                                    <span class="skills-item__text">Sass</span>
+                                </div>
+                                <div class="skills-item__bar progress-bar">
+                                    <div class="progress progress-sass"></div>
+                                </div>
+                            </li>
+                            <li class="skills__item">
+                                <div class="skills-item__name">
+                                    <span class="skills-item__circle"></span>
+                                    <span class="skills-item__text">Git</span>
+                                </div>
+                                <div class="skills-item__bar progress-bar">
+                                    <div class="progress progress-git"></div>
+                                </div>
+                            </li>
+                            <li class="skills__item">
+                                <div class="skills-item__name">
+                                    <span class="skills-item__circle"></span>
+                                    <span class="skills-item__text">Python</span>
+                                </div>
+                                <div class="skills-item__bar progress-bar">
+                                    <div class="progress progress-python"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="interests section">
+                    <h2>Interests</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__item">
+                            <i class='bx bx-arch interests__icon'></i>
+                            <span class="interests__name">Theatre</span>
+                        </div>
+                        <div class="interests__item">
+                            <i class='bx bx-compass interests__icon' ></i>
+                            <span class="interests__name">Hiking</span>
+                        </div>
+                        <div class="interests__item">
+                            <i class='bx bx-book interests__icon' ></i>
+                            <span class="interests__name">Books</span>
+                        </div>
+                        <div class="interests__item">
+                            <i class='bx bxs-music interests__icon' ></i>
+                            <span class="interests__name">Dance</span>
+                        </div>
+                    </div>
+                </section> 
+            </div>  
+                        
+            <div class="resume__right">
+                <section class="about-me section">
+                    <h2>About me</h2>
+
+                    <p class="about-me__text">
+                        I am new to programming and willing to begin my career in web development. Fast learner, hard worker, and team player. I am open to all opportunities and eager to gain knowledge and experience.
+                    </p>
+                </section>
+
+                <section class="education section" id="education">
+                    <h2>Education</h2>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">ITMO University</h3>
+                                <span class="education__studies">The School of Computer Technologies and Control</span>
+                                <span class="education__year">2019 - 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="add-education section" id="add-education">
+                    <h2>Additional education</h2>
+                    <div class="add-education__container bd-grid">
+                        <div class="add-education__content">
+                            <div class="add-education__elements">
+                                <span class="add-education__rounder"></span>
+                                <span class="add-education__line"></span>
+                            </div>
+                            <div class="add-education__data bd-grid">
+                                <h3>Winter mini-degree program STEM</h3>
+                                <span class="add-education__subtitle">MIT & JetBrains Research</span>
+                                <span class="add-education__year">2020</span>
+                            </div>
+                        </div>
+
+                        <div class="add-education__content">
+                            <div class="add-education__elements">
+                                <span class="add-education__rounder"></span>
+                                <!-- <span class="add-education__line"></span> -->
+                            </div>
+                            <div class="add-education__data bd-grid">
+                                <h3 class="add-education__title">The Complete JavaScript Course</h3>
+                                <span class="add-education__studies">Udemy</span>
+                                <span class="add-education__year">2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+                
+                <section class="code section">
+                    <h2>Code example</h2>
+
+                    <div class="code__container bd-grid">   
+                        <p class="code__text">Here is my solution to <a href="https://www.codewars.com/kata/514a024011ea4fb54200004b" class="code__link">a task from codewars</a>:</p>
+                        <img src="src/img/code.png" alt="code" class="code__img">
+                    </div>
+
+                </section>
+
+            </div>
+          </div>
+      </main>
+
+      <footer class="footer bd-container">
+          <span class="footer__year">2021</span>
+          <div class="footer__links">
+            <a href="https://github.com/malvill"><i class='bx bxl-github footer__icon'></i></a>
+            <a class="footer__logo" href="https://rs.school/js/"><img src="src/icons/rsschool.png" alt="rsschool-logo" /></a>
+          </div>    
+      </footer> 
+
+      <script src="src/js/main.js"></script>
+  </body>
+</html>

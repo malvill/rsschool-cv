@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    @media screen and (min-width: 450px) {
+        font-size: 13px;
+    }
+    @media screen and (min-width: 700px) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 968px) {
+        font-size: 15px;
+    }
+}
+
+body {
+    min-width: 200px;
+    margin-bottom: $header-height;
+    font-family: 'Poppins', Verdana, sans-serif;
+    @include font($size: $font-size-normal, $color: $color-text);
+    background-color: $color-body;
+    @media screen and (min-width: 767px) {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .resume {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: $color-container;
+        box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+        clip-path: inset(-8px -8px -8px 0px);
+    }
+    
+    .resume__left {
+        background-color: $color-container-alt;
+    }
+
+    .resume__left, .resume__right {
+        padding: 0 2rem;
+    }
+}
+
+
+h1 {
+    @include font($size: $font-size-h1, $weight: $font-semi-bold, $color: $color-title);
+}
+
+h2 {
+    @include font($size: $font-size-h2, $weight: $font-semi-bold, $color: $color-title, $text-transform: uppercase);
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 968px) {
+        text-align: left;
+    }
+}
+
+h3 {
+    @include font($size: $font-size-h3, $weight: $font-medium, $color: $color-title);
+}
+
+h4 {
+    @include font($size: 2.2rem, $weight: $font-medium, $color: $color-title);
+}
+
+h5 {
+    @include font($size: 1.6rem, $weight: $font-semi-bold, $color: $color-title);
+}
+
+section {
+    padding: 1.5rem 0;
+}
+
+
