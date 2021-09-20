@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="src/css/enlighterjs.minimal.min.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
@@ -83,12 +85,11 @@
                 <section class="home" id="home">
                     <div class="home__container section bd-grid">
                         <div class="home__data bd-grid">
-                            <img class="home__img" src="src/img/me.jpg" alt="photo-of-me">
+                            <figure class="home__img">
+                                <img class="photo-of-me" src="src/img/me.jpg" alt="photo-of-me">
+                            </figure>
                             <h1 class="home__title">Maria <b>Marchenko</b></h1>
                             <h3 class="home__subtitle">Aspiring frontend developer</h3>
-                            <div>
-                                <a class="home__button-download" download="" href="src/pdf/Maria_Marchenko.pdf">Download</a> 
-                            </div>
                         </div>
 
                         <div class="home__contacts">
@@ -209,7 +210,7 @@
                         <div class="education__content">
                             <div class="education__data bd-grid">
                                 <h3 class="education__title">ITMO University</h3>
-                                <span class="education__studies">The School of Computer Technologies and Control</span>
+                                <span class="education__subtitle">The School of Computer Technologies and Control</span>
                                 <span class="education__year">2019 - 2023</span>
                             </div>
                         </div>
@@ -238,21 +239,70 @@
                             </div>
                             <div class="add-education__data bd-grid">
                                 <h3 class="add-education__title">The Complete JavaScript Course</h3>
-                                <span class="add-education__studies">Udemy</span>
+                                <span class="add-education__subtitle">Udemy</span>
                                 <span class="add-education__year">2021</span>
                             </div>
                         </div>
                     </div>
-                </section>  
+                </section> 
+
+                <section class="projects section">
+                    <h2>Projects</h2>
+
+                    <div class="projects__container">
+                        <div class="project__content bd-grid">
+                                <h3 class="project__title">smart.plant</h3>
+                                <span class="project__subtitle">Web application for an automated hydroponic system</span>
+                                <a href="smart-plant.html" class="project__link" target="_blank"><img class="project__img" src="src/img/hydro__logo.jpg" alt="smart.plant logo"></a>
+                                <span class="project__year">In progress</span>
+                        </div>
+                    </div>
+
+                </section>
+                
+                <section class="languages section">
+                    <h2 class="section__title">Languages</h2>
+                    
+                    <div class="languages__container bg-grid">
+                        <div class="languages__language bd-grid">
+                            <h3>English <span>B2</span></h3>
+                            <ul class="language__list">
+                                <li class="language__item">
+                                    <div class="language__elements">
+                                        <span class="language__rounder"></span>
+                                        <span class="language__line"></span>
+                                    </div>
+                                    <p class="language__content">Every week I have a three-hour English study session with a native speaker</p> 
+                                </li>
+                                <li class="language__item">
+                                    <div class="language__elements">
+                                        <span class="language__rounder"></span>
+                                        <span class="language__line"></span>
+                                    </div>
+                                    <p class="language__content">I was a volunteer at an eco-camp in Italy. It allowed me to immerse myself in the language environment for two weeks</p> 
+                                </li>
+                                <li class="language__item">
+                                    <div class="language__elements">
+                                        <span class="language__rounder"></span>
+                                    </div>
+                                    <p class="language__content">I help foreign students at my university adapt which involves a lot of communication</p> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
                 
                 <section class="code section">
                     <h2>Code example</h2>
 
                     <div class="code__container bd-grid">   
-                        <p class="code__text">Here is my solution to <a href="https://www.codewars.com/kata/514a024011ea4fb54200004b" class="code__link">a task from codewars</a>:</p>
-                        <img src="src/img/code.png" alt="code" class="code__img">
+                        <p class="code__text">Here is my solution to <a href="https://www.codewars.com/kata/514a024011ea4fb54200004b" class="code__link" target="_blank">a task from codewars</a>:</p>
+                        <pre class="code__code" data-enlighter-language="js">
+function domainName(url) { 
+    return url.match(/(?:https?\:\/\/)?(?:www.)?([\w-]+)(?:(\.|\/))/)[1]
+}
+                        </pre>
                     </div>
-
                 </section>
 
             </div>
@@ -262,11 +312,19 @@
       <footer class="footer bd-container">
           <span class="footer__year">2021</span>
           <div class="footer__links">
-            <a href="https://github.com/malvill"><i class='bx bxl-github footer__icon'></i></a>
-            <a class="footer__logo" href="https://rs.school/js/"><img src="src/icons/rsschool.png" alt="rsschool-logo" /></a>
+            <a href="https://github.com/malvill" target="_blank"><i class='bx bxl-github footer__icon'></i></a>
+            <a class="footer__logo" target="_blank" href="https://rs.school/js/"><img src="src/icons/rsschool.png" alt="rsschool-logo" /></a>
           </div>    
       </footer> 
 
       <script src="src/js/main.js"></script>
+      <script src="src/js/enlighterjs.min.js"></script>
+      <script>
+        EnlighterJS.init('pre', 'code', {
+                language : 'javascript',
+                theme: 'minimal',
+                indent : 2
+        });
+      </script>
   </body>
 </html>
