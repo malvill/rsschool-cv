@@ -1,0 +1,14 @@
+.container {
+    max-width: 800px;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.system {
+    height: 300px;
+}
+
+.application {
+    max-width: 100%;
+}

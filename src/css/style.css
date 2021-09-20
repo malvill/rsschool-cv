@@ -60,7 +60,7 @@ body {
     grid-template-columns: 0.5fr 1fr;
     background-color: #FAFAFA;
     box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
-    clip-path: inset(-8px -8px -8px 0px);
+    clip-path: inset(-8px -8px 0 -8px);
   }
 
   .resume__left {
@@ -69,6 +69,7 @@ body {
 
   .resume__left, .resume__right {
     padding: 0 2rem;
+    order: unset;
   }
 }
 h1 {
@@ -155,11 +156,16 @@ section {
   max-height: 70px;
   background-color: #707070;
   box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
-  clip-path: inset(0px -8px -8px 0px);
+  clip-path: inset(0px -8px -8px -8px);
   display: flex;
   padding: 1rem 2rem;
   justify-content: right;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    display: none;
+  }
 }
 
 .footer__links {
@@ -280,11 +286,14 @@ section {
 }
 
 .home__img {
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.photo-of-me {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  justify-self: center;
-  margin-bottom: 0.5rem;
 }
 
 .home__title {
@@ -314,25 +323,6 @@ section {
 .contacts__icon {
   font-size: 1.2rem;
   margin-right: 0.25rem;
-}
-
-.home__button-download {
-  display: inline-block;
-  border: 2px solid #403A3A;
-  color: #0B0A0A;
-  padding: 1rem 2rem;
-  border-radius: 0.25rem;
-  transition: 0.3s;
-  font-weight: 500;
-  margin-top: 1.5rem;
-}
-.home__button-download:hover {
-  background-color: #403A3A;
-}
-@media screen and (min-width: 968px) {
-  .home__button-download {
-    display: none;
-  }
 }
 
 .profile__text {
@@ -495,10 +485,53 @@ section {
 }
 
 .code__link {
-  color: #403A3A;
+  color: #0B0A0A;
 }
 .code__link:hover {
   color: #0B0A0A;
+}
+
+.language__elements {
+  padding-right: 1em;
+}
+
+.language__item {
+  display: flex;
+}
+
+.language__rounder {
+  position: relative;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #707070;
+  border-radius: 50%;
+  margin-top: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+.language__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #707070;
+  transform: translate(7px, 0);
+}
+
+.language__content {
+  font-size: 0.875rem;
+  line-height: 2rem;
+}
+
+.project__content {
+  gap: 0.5rem;
+}
+
+.project__img {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #707070;
 }
 
 /*# sourceMappingURL=style.css.map */

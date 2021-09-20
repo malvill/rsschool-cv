@@ -2,11 +2,14 @@
     max-height: 70px;
     background-color: $color-text-light;
     box-shadow: 0 0 8px rgba(13, 12, 12, .15);
-    clip-path: inset(0px -8px -8px 0px);
+    clip-path: inset(0px -8px -8px -8px);
     display: flex;
     padding: 1rem 2rem;
     justify-content: right;
     align-items: center;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .footer__links {
