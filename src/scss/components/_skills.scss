@@ -43,32 +43,49 @@
     position: absolute;
     left: 0;
     height: 100%;
-    background-color: $color-text-light;;
+    background-color: $color-text-light;
+
     @media screen and (min-width: 767px) {
         background-color: $color-text-light;
     }
-}
 
-.progress-js {
-    width: 45%;
-}
+    &_js {
+        width: 70%;
+    }
 
-.progress-html {
-    width: 40%;
-}
+    &_html {
+        width: 70%;
+    }
 
-.progress-css {
-    width: 25%;
-}
+    &_css {
+        width: 70%;
+    }
 
-.progress-sass {
-    width: 20%;
-}
+    &_sass {
+        width: 40%;
+    }
 
-.progress-git {
-    width: 30%
-}
+    &_angular {
+        width: 40%;
+    }
 
-.progress-python {
-    width: 30%;
+    &_typescript {
+        width: 20%;
+    }
+
+    &_git {
+        width: 20%;
+    }
+
+    &_python {
+        width: 20%;
+    }
+
+    &_express {
+        width: 10%;
+    }
+
+    &_figma {
+        width: 10%;
+    }
 }

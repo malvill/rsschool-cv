@@ -428,29 +428,35 @@ section {
     background-color: #707070;
   }
 }
-
-.progress-js {
-  width: 45%;
+.progress_js {
+  width: 70%;
 }
-
-.progress-html {
+.progress_html {
+  width: 70%;
+}
+.progress_css {
+  width: 70%;
+}
+.progress_sass {
   width: 40%;
 }
-
-.progress-css {
-  width: 25%;
+.progress_angular {
+  width: 40%;
 }
-
-.progress-sass {
+.progress_typescript {
   width: 20%;
 }
-
-.progress-git {
-  width: 30%;
+.progress_git {
+  width: 20%;
 }
-
-.progress-python {
-  width: 30%;
+.progress_python {
+  width: 20%;
+}
+.progress_express {
+  width: 10%;
+}
+.progress_figma {
+  width: 10%;
 }
 
 .interests__container {
